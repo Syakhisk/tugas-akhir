@@ -54,7 +54,7 @@ kn service create vite-knative-svc \
 --force
 ```
 
-## Use local images for services
+## Use local images for minikube services
 ```
 # Get ip of minikube
 minikube -p knative ip
