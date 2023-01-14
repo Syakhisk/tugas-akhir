@@ -1,0 +1,29 @@
+version: '3.9'
+services:
+  internal-gateway:
+    container_name: rt-int-gateway
+    image: ubuntu:18.04
+    tty: true
+    networks:
+      - internal
+      - external
+  web-server:
+    container_name: rt-web-server
+    image: python:3.11-alpine
+    command: [python, '-m', 'http.server']
+    networks:
+      - internal
+
+  external-gateway:
+    container_name: rt-ext-gateway
+    image: ubuntu:18.04
+    tty: true
+    ports:
+     - 8765:4321
+    networks:
+      - external
+
+
+networks:
+  internal:
+  external:
