@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-      - image: dev.local/helloworld-nodejs:latest
+      - image: dev.local/helloworld-nodejs:1.0.0
         imagePullPolicy: Never
         env:
         - name: TARGET
