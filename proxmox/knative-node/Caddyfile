@@ -1,0 +1,14 @@
+# add each subdomain to /etc/hosts first
+# e.g. 
+# 127.0.0.1 test.knative.local
+# 127.0.0.1 helloworld-nodejs.knative.local
+
+test.knative.local {
+	respond "Hello, world!"
+}
+
+helloworld-nodejs.knative.local {
+	reverse_proxy 192.168.49.2:30802 {
+		header_up Host helloworld-nodejs.default.10.99.102.158.sslip.io
+	}
+}
