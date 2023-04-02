@@ -8,6 +8,7 @@ spec:
     spec:
       containers:
       - image: dev.local/is-prime:1.0.0
+        imagePullPolicy: Never
         env:
         - name: TARGET
           value: "Node.js Sample v1"
