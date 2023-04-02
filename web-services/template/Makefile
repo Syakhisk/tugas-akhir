@@ -10,7 +10,7 @@ build:
 	docker build --tag ${DOCKER_TAG} .
 
 load:
-	minikube image load ${DOCKER_TAG}
+	minikube image load --overwrite ${DOCKER_TAG}
 
 run:
 	docker run -p 3000:3000 --rm -it ${DOCKER_TAG}
