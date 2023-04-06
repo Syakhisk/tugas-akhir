@@ -2,7 +2,7 @@ const express = require("express");
 const fs = require("fs");
 const app = express();
 
-app.get("/file-io", (req, res) => {
+app.get("/", (req, res) => {
   const date = new Date();
   const timestamp = Math.floor(date.getTime() / 1000); // get current Unix timestamp
   const filename = `lorem-ipsum_${timestamp}.txt`;

@@ -10,7 +10,13 @@ function fibonacci(n) {
 }
 
 // Endpoint to generate Fibonacci sequence
-app.get("/fibonacci/:n", (req, res) => {
+app.get("/", (req, res) => {
+  const n = parseInt(30);
+  const result = fibonacci(n);
+  res.json({ result });
+});
+
+app.get("/:n", (req, res) => {
   const n = parseInt(req.params.n);
   const result = fibonacci(n);
   res.json({ result });

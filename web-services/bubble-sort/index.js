@@ -15,7 +15,7 @@ function bubbleSort(arr) {
   return arr;
 }
 
-app.get("/bubble-sort", (req, res) => {
+app.get("/", (req, res) => {
   const arr = [4, 2, 1, 3, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const sortedArr = bubbleSort(arr);
   res.send(sortedArr.toString());
