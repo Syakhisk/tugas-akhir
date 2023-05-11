@@ -1,0 +1,21 @@
+- name: Create and Configure a Proxmox VM
+  hosts: proxmox
+  gather_facts: no
+
+  tasks:
+    - name: Create a new VM
+      community.general.proxmox:
+        vmid: 1000
+        node: uk-mc02
+        api_user: root@pam
+        api_password: 1q2w3e
+        api_host: node1
+        password: 123456
+        hostname: example.org
+        ostemplate: 'local:vztmpl/ubuntu-14.04-x86_64.tar.gz'
+
+    - name: Install Apache web server
+      apt:
+        name: apache2
+        state: present
+
