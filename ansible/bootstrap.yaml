@@ -1,11 +1,11 @@
 - name: Create and Configure a Proxmox VM
-  hosts: localhost
+  hosts: proxmox
   gather_facts: no
 
   tasks:
     - name: Create a new VM
       community.general.proxmox:
-        vmid: 100
+        vmid: 1000
         node: uk-mc02
         api_user: root@pam
         api_password: 1q2w3e
