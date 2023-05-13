@@ -2,26 +2,26 @@ DOCKER_USERNAME ?= dev.local
 APPLICATION_NAME ?= $(shell basename ${PWD})
 DOCKER_TAG ?= ${DOCKER_USERNAME}/${APPLICATION_NAME}:1.0.0
 
-build-load bl:
+build-load:
 	make build
 	make load
 
-build-run br:
+build-run:
 	make build
 	make run
 
-build-run-detached brd:
+build-run-detached:
 	make build
 	make run-detached
  
-build b:
+build:
 	docker build --tag ${DOCKER_TAG} .
 
-load l:
+load:
 	minikube image load --overwrite ${DOCKER_TAG}
 
-run r:
+run:
 	docker run -p 3000:3000 --rm -it ${DOCKER_TAG}
 
-run-detached rd:
+run-detached:
 	docker run -p 3000:3000 --rm -d ${DOCKER_TAG}
