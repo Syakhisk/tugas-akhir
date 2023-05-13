@@ -6,10 +6,10 @@
     - name: Create a new VM
       community.general.proxmox:
         vmid: 1000
-        node: uk-mc02
+        node: pve
         api_user: root@pam
-        api_password: 1q2w3e
-        api_host: node1
+        api_password: PVE:root@pam:645D1F9F::cHIj8R2/Xy/iFYUzNDAodGZKTrQgjaagmZa7aIoPD16wucNqmySNiq5wRny3NQpshxta81TPUvK9OKtJND+nVSHkBPATrLSGXG1bk9p+rr21zAibV8gWkddiPV4aKv1NLXEXrCPA9EPr3g5Hw4C3548wJ2F0UFzrnk+SClHJbriyTc7HyJfJwqFn6MdCL8IEufeeF4GPI1c6BvNuQHMPC+3ZTgqYLKlg7kY2DtRmja0Xp8xXokCwYuHNSmNq7D2Q9qJ5HK8L0Kzw9OSVE0ChEHbhRKDS9ADlpP413ZKAFz8DekmadrW+YkmtRX8NdybRuTHNBv5xPR7OcKz7G/kF3Q==
+        api_host: pve
         password: 123456
         hostname: example.org
         ostemplate: 'local:vztmpl/ubuntu-14.04-x86_64.tar.gz'
