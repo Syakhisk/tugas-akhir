@@ -5,7 +5,7 @@
 
 VM_ID="9000"
 NAME="template-knative"
-IMAGE="/root/images/resized-jammy-server-cloudimg-amd64.img"
+IMAGE="/root/images/resized-jammy-server.img"
 
 IP="10.0.0.10/22"
 GW="10.0.0.1"
