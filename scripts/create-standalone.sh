@@ -1,17 +1,26 @@
 #!/bin/env bash
 
-# Script to create TEMPLATE VM
+# Script to create TEMPLATE VM for standalone
 # To create clone use pve ui
 
 VM_ID="9003"
+NAME="template-standalone"
 IMAGE="/root/images/resized-jammy-server.img"
+
 IP="10.0.0.20/22"
 GW="10.0.0.1"
 
+USERNAME="ubuntu"
+PASSWORD="ubuntu"
+SSH_KEY="$HOME/.ssh/id_rsa.pub"
+
+MEMORY="512"
+CORES="1"
+
 qm create "$VM_ID"\
-	--name "standalone" \
-	--memory 512 \
-	--cores 1 \
+	--name "$NAME" \
+	--memory "$MEMORY" \
+	--cores "$CORES" \
 	--net0 virtio,bridge=vmbr2 \
 	--scsihw virtio-scsi-pci \
 	--scsi0 local-lvm:0,import-from="$IMAGE" \
@@ -19,4 +28,5 @@ qm create "$VM_ID"\
 	--boot order=scsi0 \
 	--serial0 socket --vga serial0 \
 	--ipconfig0 ip="$IP",gw="$GW" \
-	--ciuser ubuntu --cipassword="$(openssl passwd -6 ubuntu)"
+  --sshkey "$SSH_KEY" \
+	--ciuser "$USERNAME" --cipassword="$(openssl passwd -6 "$PASSWORD")"
