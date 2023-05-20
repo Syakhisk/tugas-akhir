@@ -1,14 +1,15 @@
-# add each subdomain to /etc/hosts first
+# add each subdomain to /etc/hosts to test
 # e.g. 
-# 127.0.0.1 test.knative.local
-# 127.0.0.1 helloworld-nodejs.knative.local
+# 127.0.0.1 test.grogu.hosts.pve
 
-test.knative.local {
+test.grogu.hosts.pve {
+  tls internal
 	respond "Hello, world!"
 }
 
-helloworld-nodejs.knative.local {
-	reverse_proxy 192.168.49.2:30802 {
-		header_up Host helloworld-nodejs.default.10.99.102.158.sslip.io
-	}
+bubble-sort.grogu.hosts.pve {
+  tls internal
+  reverse_proxy 192.168.49.2:32518 {
+    header_up Host bubble-sort.default.10.102.11.179.sslip.io
+  }
 }
