@@ -13,8 +13,8 @@ $ORIGIN hosts.pve.
 
 ns            IN     A      10.15.40.20
 
+*.grogu		IN     A      10.0.0.1 ; tunneled to 10.0.0.10
 grogu		IN     A      10.0.0.10
-*.grogu		IN     A      10.0.0.10
 anakin		IN     A      10.0.0.20
 padme		IN     A      10.0.0.21
 luke		IN     A      10.0.0.22
