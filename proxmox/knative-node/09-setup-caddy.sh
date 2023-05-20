@@ -1,4 +1,4 @@
-docker run\
+docker run \
     --name my-caddy \
     --rm \
     --network host \
