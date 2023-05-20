@@ -7,9 +7,9 @@ test.grogu.hosts.pve {
 	respond "Hello, world!"
 }
 
-bubble-sort.grogu.hosts.pve {
+*.grogu.hosts.pve {
 	tls internal
 	reverse_proxy 192.168.49.2:32518 {
-		header_up Host bubble-sort.default.local.knative
+		header_up Host {labels.3}.default.local.knative
 	}
 }
