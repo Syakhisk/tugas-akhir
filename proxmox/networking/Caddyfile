@@ -11,11 +11,11 @@ test.grogu.hosts.pve {
 	tls internal
 
  #  # tunneled to 192.168.49.2:32518
-	# reverse_proxy localhost:32518 {
-	# 	header_up Host {labels.3}.default.local.knative
-	# }
-
-	reverse_proxy 192.168.49.2:32518 {
+	reverse_proxy localhost:32518 {
 		header_up Host {labels.3}.default.local.knative
 	}
+
+	# reverse_proxy 192.168.49.2:32518 {
+	# 	header_up Host {labels.3}.default.local.knative
+	# }
 }
