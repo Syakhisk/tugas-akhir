@@ -1,0 +1,16 @@
+# add each subdomain to /etc/hosts to test
+# e.g. 
+# 127.0.0.1 test.grogu.hosts.pve
+
+test.grogu.hosts.pve {
+	tls internal
+	respond "Hello, world!"
+}
+
+*.grogu.hosts.pve {
+	tls internal
+
+	reverse_proxy 192.168.49.2:32518 {
+		header_up Host {labels.3}.default.local.knative
+	}
+}
