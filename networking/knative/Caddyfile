@@ -2,12 +2,12 @@
 # e.g. 
 # 127.0.0.1 test.grogu.hosts.pve
 
-test.grogu.hosts.pve {
+test.grogu.hosts.pve:80 {
 	tls internal
 	respond "Hello, world!"
 }
 
-*.grogu.hosts.pve {
+*.grogu.hosts.pve:80 {
 	tls internal
 
 	reverse_proxy 192.168.49.2:32518 {
