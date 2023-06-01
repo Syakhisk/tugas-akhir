@@ -2,8 +2,6 @@
 # e.g. 
 # 127.0.0.1 test.grogu.hosts.pve
 
-vars minikube_ip 192.168.49.2
-
 test.grogu.hosts.pve:80 {
 	tls internal
 	respond "Hello, world!"
@@ -12,13 +10,13 @@ test.grogu.hosts.pve:80 {
 dashboard.grogu.hosts.pve:80 {
   tls internal
 
-  reverse_proxy {minikube_ip}:8001
+  reverse_proxy 192.168.49.2:30000
 }
 
 *.grogu.hosts.pve:80 {
 	tls internal
 
-	reverse_proxy {minikube_ip}:32518 {
+	reverse_proxy 192.168.49.2:32518 {
 		header_up Host {labels.3}.default.local.knative
 	}
 }
