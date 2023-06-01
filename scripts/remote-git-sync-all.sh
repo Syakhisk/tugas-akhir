@@ -31,5 +31,5 @@ ssh root@$r_pve_ip "git -C $git_dir pull"
 
 for target in "${targets[@]}"; do
   echo -e "\n\n--Running git pull on $target--"
-	ssh root@$r_pve_ip "ssh -o StrictHostKeychecking=no ubuntu@$target 'git -C $git_dir pull'"
+	ssh root@$r_pve_ip "ssh -o StrictHostKeychecking=no ubuntu@$target 'git -C $git_dir pull --rebase'"
 done
