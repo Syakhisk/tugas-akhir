@@ -19,3 +19,5 @@ anakin		IN     A      10.0.0.20
 padme		IN     A      10.0.0.21
 luke		IN     A      10.0.0.22
 leia		IN     A      10.0.0.23
+
+; vim: tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab:
