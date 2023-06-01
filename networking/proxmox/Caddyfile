@@ -3,7 +3,27 @@ test.hosts.pve {
 	respond "Hello, world!"
 }
 
-*.hosts.pve {
-  tls internal
-  reverse_proxy 10.15.40.20
+*.grogu.hosts.pve {
+	tls internal
+  reverse_proxy 10.0.0.10
+}
+
+anakin.hosts.pve {
+	tls internal
+  reverse_proxy 10.0.0.20
+}
+
+padme.hosts.pve {
+	tls internal
+  reverse_proxy 10.0.0.21
+}
+
+luke.hosts.pve {
+	tls internal
+  reverse_proxy 10.0.0.22
+}
+
+leia.hosts.pve {
+	tls internal
+  reverse_proxy 10.0.0.23
 }
