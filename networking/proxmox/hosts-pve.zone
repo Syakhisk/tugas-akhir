@@ -11,13 +11,13 @@ $ORIGIN hosts.pve.
 
               IN     NS     ns.hosts.pve.
 
-ns            IN     A      10.15.40.20
+ns          IN     A      10.15.40.20
+*			IN     A      10.15.40.20
 
-*.grogu		IN     A      10.0.0.10
-grogu		IN     A      10.0.0.10
-anakin		IN     A      10.0.0.20
-padme		IN     A      10.0.0.21
-luke		IN     A      10.0.0.22
-leia		IN     A      10.0.0.23
+; grogu		IN     A      10.0.0.10
+; anakin	IN     A      10.0.0.20
+; padme		IN     A      10.0.0.21
+; luke		IN     A      10.0.0.22
+; leia		IN     A      10.0.0.23
 
 ; vim: tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab:
