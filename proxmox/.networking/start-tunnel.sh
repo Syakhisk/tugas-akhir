@@ -1,9 +1,0 @@
-#!/bin/env bash
-
-PORT=32518
-KOURIER_IP="192.168.49.2"
-KNATIVE_IP="10.0.0.10"
-USER="ubuntu"
-
-ssh -N -L "$PORT:$KOURIER_IP:$PORT" $USER@$KNATIVE_IP
-
