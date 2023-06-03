@@ -10,13 +10,13 @@ test.grogu.hosts.pve:80 {
 dashboard.grogu.hosts.pve:80 {
   tls internal
 
-  reverse_proxy 192.168.49.2:30000
+  reverse_proxy {$MINIKUBE_IP}:{$DASHBOARD_PORT}
 }
 
 *.grogu.hosts.pve:80 {
 	tls internal
 
-	reverse_proxy 192.168.49.2:32518 {
+	reverse_proxy {$MINIKUBE_IP}:{$KOURIER_PORT} {
 		header_up Host {labels.3}.default.local.knative
 	}
 }
