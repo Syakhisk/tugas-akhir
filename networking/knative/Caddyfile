@@ -13,6 +13,13 @@ dashboard.grogu.hosts.pve:80 {
   reverse_proxy {$MINIKUBE_IP}:{$DASHBOARD_PORT}
 }
 
+prometheus.grogu.hosts.pve:80 {
+  tls internal
+
+  reverse_proxy {$MINIKUBE_IP}:{$PROMETHEUS_PORT}
+}
+
+
 *.grogu.hosts.pve:80 {
 	tls internal
 
