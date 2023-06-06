@@ -8,15 +8,23 @@ test.grogu.hosts.pve:80 {
 }
 
 dashboard.grogu.hosts.pve:80 {
-  tls internal
+	tls internal
+	reverse_proxy {$MINIKUBE_IP}:{$DASHBOARD_PORT}
 
-  reverse_proxy {$MINIKUBE_IP}:{$DASHBOARD_PORT}
+	log {
+		level DEBUG
+		output file /var/log/caddy/access.log
+	}
 }
 
 prometheus.grogu.hosts.pve:80 {
-  tls internal
+	tls internal
+	reverse_proxy {$MINIKUBE_IP}:{$PROMETHEUS_PORT}
 
-  reverse_proxy {$MINIKUBE_IP}:{$PROMETHEUS_PORT}
+	log {
+		level DEBUG
+		output file /var/log/caddy/access.log
+	}
 }
 
 
@@ -26,4 +34,12 @@ prometheus.grogu.hosts.pve:80 {
 	reverse_proxy {$MINIKUBE_IP}:{$KOURIER_PORT} {
 		header_up Host {labels.3}.default.local.knative
 	}
+
+	log {
+		level DEBUG
+		output file /var/log/caddy/access.log
+	}
 }
+
+
+# vim: tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab:
