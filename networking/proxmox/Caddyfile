@@ -8,6 +8,12 @@ test.hosts.pve {
   reverse_proxy 10.0.0.10
 }
 
+ddosify.hosts.pve {
+	tls internal
+  reverse_proxy 10.0.0.11:8014
+}
+
+
 anakin.hosts.pve {
 	tls internal
   reverse_proxy 10.0.0.20:3000
