@@ -9,12 +9,10 @@ spec:
       annotations:
         autoscaling.knative.dev/class: "hpa.autoscaling.knative.dev"
         autoscaling.knative.dev/metric: "cpu"
-        autoscaling.knative.dev/target: "30"
+        autoscaling.knative.dev/target: "50"
 
         autoscaling.knative.dev/min-scale: "0"
-        autoscaling.knative.dev/max-scale: "5"
-
-        autoscaling.knative.dev/window: "10s"
+        autoscaling.knative.dev/max-scale: "4"
     spec:
       containers:
         - image: dev.local/fibonacci:1.0.0
