@@ -5,31 +5,38 @@ test.hosts.pve {
 
 *.grogu.hosts.pve {
 	tls internal
-  reverse_proxy 10.0.0.10
+	reverse_proxy 10.0.0.10
+}
+
+*.standalone.hosts.pve {
+	tls internal
+	reverse_proxy 10.0.0.30
 }
 
 ddosify.hosts.pve {
 	tls internal
-  reverse_proxy 10.0.0.11:8014
+	reverse_proxy 10.0.0.11:8014
 }
 
 
 anakin.hosts.pve {
 	tls internal
-  reverse_proxy 10.0.0.20:3000
+	reverse_proxy 10.0.0.20:3000
 }
 
 padme.hosts.pve {
 	tls internal
-  reverse_proxy 10.0.0.21:3000
+	reverse_proxy 10.0.0.21:3000
 }
 
 luke.hosts.pve {
 	tls internal
-  reverse_proxy 10.0.0.22:3000
+	reverse_proxy 10.0.0.22:3000
 }
 
 leia.hosts.pve {
 	tls internal
-  reverse_proxy 10.0.0.23:3000
+	reverse_proxy 10.0.0.23:3000
 }
+
+# vim: ft=conf tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab:

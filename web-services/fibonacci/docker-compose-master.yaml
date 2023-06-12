@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  caddy:
+    container_name: caddy
+    image: caddy:2.6.4-alpine
+    network_mode: host
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+    restart: unless-stopped
+  web:
+    container_name: web
+    image: dev.local/fibonacci:1.0.0
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+
+volumes:
+  caddy_data:
+

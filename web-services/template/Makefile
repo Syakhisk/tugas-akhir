@@ -25,3 +25,15 @@ run:
 
 run-detached:
 	docker run -p 3000:3000 --rm -d ${DOCKER_TAG}
+
+run-standalone-master:
+	docker compose -f docker-compose-master.yaml up --detach
+
+run-standalone-slave:
+	docker compose -f docker-compose-slave.yaml up --detach
+
+stop-standalone-master:
+	docker compose -f docker-compose-master.yaml down
+
+stop-standalone-slave:
+	docker compose -f docker-compose-slave.yaml down
