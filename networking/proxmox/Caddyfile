@@ -13,6 +13,11 @@ test.hosts.pve {
 	reverse_proxy 10.0.0.30
 }
 
+grafana.hosts.pve {
+	tls internal
+	reverse_proxy 10.0.0.41:3000
+}
+
 ddosify.hosts.pve {
 	tls internal
 	reverse_proxy 10.0.0.11:8014
