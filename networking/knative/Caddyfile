@@ -17,11 +17,6 @@ prometheus.grogu.hosts.pve:80 {
 	reverse_proxy {$MINIKUBE_IP}:{$PROMETHEUS_PORT}
 }
 
-grafana.grogu.hosts.pve:80 {
-	tls internal
-	reverse_proxy {$MINIKUBE_IP}:{$GRAFANA_PORT}
-}
-
 *.grogu.hosts.pve:80 {
 	tls internal
 
