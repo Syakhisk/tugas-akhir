@@ -3,13 +3,17 @@ kube-state-metrics:
     - pods=[*]
     - deployments=[app.kubernetes.io/name,app.kubernetes.io/component,app.kubernetes.io/instance]
 prometheus:
+  service:
+    type: NodePort
+    nodePort: 32258
+
   prometheusSpec:
     serviceMonitorSelectorNilUsesHelmValues: false
     podMonitorSelectorNilUsesHelmValues: false
     resources:
       limits:
         cpu: 200m
-        memory: 400Mi
+        memory: 200Mi
       requests:
         cpu: 100m
         memory: 100Mi
