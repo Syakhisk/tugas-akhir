@@ -13,7 +13,8 @@ test.hosts.pve {
 ### Standalone Nodes
 *.standalone.hosts.pve {
 	tls internal
-	reverse_proxy 10.0.0.30
+	# reverse_proxy 10.0.0.30
+	reverse_proxy 10.0.0.35
 }
 
 ### Monitoring
