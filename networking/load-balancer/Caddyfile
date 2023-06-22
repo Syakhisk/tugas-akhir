@@ -1,0 +1,31 @@
+test.standalone-lb.hosts.pve:80 {
+	tls internal
+	respond "Hello, world!"
+}
+
+one.standalone-lb.hosts.pve:80 {
+	tls internal
+	reverse_proxy 10.0.0.30:3000
+}
+
+two.standalone-lb.hosts.pve:80 {
+	tls internal
+	reverse_proxy 10.0.0.30:3000 10.0.0.31:3000
+}
+
+three.standalone-lb.hosts.pve:80 {
+	tls internal
+	reverse_proxy 10.0.0.30:3000 10.0.0.31:3000 10.0.0.32:3000
+}
+
+four.standalone-lb.hosts.pve:80 {
+	tls internal
+	reverse_proxy 10.0.0.30:3000 10.0.0.31:3000 10.0.0.32:3000 10.0.0.33:3000
+}
+
+five.standalone-lb.hosts.pve:80 {
+	tls internal
+	reverse_proxy 10.0.0.30:3000 10.0.0.31:3000 10.0.0.32:3000 10.0.0.33:3000 10.0.0.34:3000
+}
+
+# vim: ft=conf tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab:
