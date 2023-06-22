@@ -6,7 +6,7 @@ services:
     image: caddy:2.6.4-alpine
     network_mode: host
     volumes:
-      - ./Caddyfile-lb:/etc/caddy/Caddyfile
+      - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
     restart: unless-stopped
 
