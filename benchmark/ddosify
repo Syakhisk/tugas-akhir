@@ -1,0 +1,53 @@
+#!/bin/env bash
+
+remove-ansi() {
+	sed $'s/\033[[][^A-Za-z]*[A-Za-z]//g'
+}
+
+# args $@: -l linear -T 10 -d 1 -n 10 -t https://one.standalone.hosts.pve
+# turn the output to 'one.standalone'
+args="$*"
+target=$(echo "$args" | awk -F '-t ' '{print $2}' | awk '{print $1}')
+target=$(echo "$target" | awk -F '//' '{print $2}')
+target_name=$(echo "$target" | sed 's/\.hosts\.pve//g')
+count=$(echo "$args" | awk -F '-n ' '{print $2}' | awk '{print $1}')
+timeout=$(echo "$args" | awk -F '-T ' '{print $2}' | awk '{print $1}')
+duration=$(echo "$args" | awk -F '-d ' '{print $2}' | awk '{print $1}')
+type=$(echo "$args" | awk -F '-l ' '{print $2}' | awk '{print $1}')
+timestamp=$(date +%s)
+date=$(date -d "@$timestamp" +%Y-%m-%d-%H-%M-%S)
+
+echo "args: $args"
+echo "target: $target"
+echo "count: $count"
+echo "timeout: $timeout"
+echo "duration: $duration"
+echo "type: $type"
+
+filename="result-${target}-${count}x-${duration}s-${type}-${timestamp}.txt"
+cat <<EOF >"$filename"
+------
+date: $date
+target: $target_name
+count: $count
+timeout: $timeout
+duration: $duration
+type: $type
+------
+
+EOF
+
+docker run --network=host --rm ddosify/ddosify ddosify "$@" | tee >(remove-ansi >>"$filename")
+
+ok=$(grep "200 (OK)" "$filename" | cut -d':' -f 2)
+success_rate=$(printf "%.1f\n" "$(echo "$ok/$count * 100" | bc -l)")
+avg=$(grep "Total" "$filename" | cut -d':' -f 2 | tr -d 's')
+avg=$(echo "$avg * 1000" | bc -l)
+
+echo "success rate: $success_rate%"
+echo "ok: $ok"
+echo "avg: $avg"
+
+
+resultdir="results"
+mv "$filename" "${resultdir}/result-${target}-${count}x-${duration}s-${type}-${timestamp}-${success_rate}%.txt"
