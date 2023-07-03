@@ -1,7 +1,7 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: fibonacci-to-5-pod
+  name: fibonacci-1-to-5-pod
   namespace: default
 spec:
   template:
@@ -10,7 +10,7 @@ spec:
         autoscaling.knative.dev/metric: "concurrency"
         autoscaling.knative.dev/target: "1300"
 
-        autoscaling.knative.dev/min-scale: "0"
+        autoscaling.knative.dev/min-scale: "1"
         autoscaling.knative.dev/max-scale: "5"
 
         autoscaling.knative.dev/window: "6s"
