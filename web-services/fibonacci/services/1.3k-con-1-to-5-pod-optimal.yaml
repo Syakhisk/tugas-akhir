@@ -8,7 +8,7 @@ spec:
     metadata:
       annotations:
         autoscaling.knative.dev/metric: "concurrency"
-        autoscaling.knative.dev/target: "800"
+        autoscaling.knative.dev/target: "1000"
 
         autoscaling.knative.dev/min-scale: "1"
         autoscaling.knative.dev/max-scale: "5"
@@ -19,7 +19,7 @@ spec:
         autoscaling.knative.dev/target-burst-capacity: "-1"
 
         # If current concurrency is 70% of target, scale up (accommodate containerCreating)
-        autoscaling.knative.dev/target-utilization-percentage: "70"
+        autoscaling.knative.dev/target-utilization-percentage: "50"
     spec:
       containerConcurrency: 1000
       containers:
