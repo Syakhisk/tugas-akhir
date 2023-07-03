@@ -16,7 +16,7 @@ spec:
         autoscaling.knative.dev/window: "6s"
 
         # Make all requests are handled by the activator (always active)
-        autoscaling.knative.dev/target-burst-capacity: "0"
+        autoscaling.knative.dev/target-burst-capacity: "-1"
 
         # If current concurrency is 70% of target, scale up (accommodate containerCreating)
         autoscaling.knative.dev/target-utilization-percentage: "70"
@@ -26,7 +26,7 @@ spec:
           resources:
             requests:
               cpu: 200m
-              memory: 200M
+              memory: 512M
             limits:
               cpu: 1
               memory: 512M
