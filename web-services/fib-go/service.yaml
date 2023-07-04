@@ -10,7 +10,7 @@ spec:
         autoscaling.knative.dev/metric: "concurrency"
         autoscaling.knative.dev/target: "1500"
 
-        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/min-scale: "2"
         autoscaling.knative.dev/max-scale: "10"
 
         autoscaling.knative.dev/window: "6s"
