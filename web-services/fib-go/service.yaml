@@ -8,12 +8,18 @@ spec:
     metadata:
       annotations:
         autoscaling.knative.dev/metric: "concurrency"
-        autoscaling.knative.dev/target: "2000"
+        autoscaling.knative.dev/target: "1500"
 
         autoscaling.knative.dev/min-scale: "1"
         autoscaling.knative.dev/max-scale: "10"
 
-        autoscaling.knative.dev/window: "10s"
+        autoscaling.knative.dev/window: "6s"
+
+        # Make all requests are handled by the activator (always active)
+        autoscaling.knative.dev/target-burst-capacity: "-1"
+
+        # If current concurrency is 70% of target, scale up (accommodate containerCreating)
+        autoscaling.knative.dev/target-utilization-percentage: "50"
     spec:
       containers:
         - image: dev.local/fib-go:1.0.0
@@ -24,4 +30,3 @@ spec:
             limits:
               cpu: 1
               memory: 512M
-

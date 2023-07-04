@@ -40,6 +40,11 @@ ddosify.hosts.pve {
 	reverse_proxy 10.0.0.11:8014
 }
 
+fib-go.hosts.pve {
+	tls internal
+	reverse_proxy 10.0.0.100:8080
+}
+
 ### Archive
 anakin.hosts.pve {
 	tls internal
