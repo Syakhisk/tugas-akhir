@@ -23,13 +23,15 @@ spec:
 
         # Don't create a pod when first deployed, wait for first request
         # autoscaling.knative.dev/initial-scale: "0"
+
+        # Make 2 pods when scaling from zero
+        autoscaling.knative.dev/activation-scale: "3"
     spec:
       containers:
         - image: dev.local/fibonacci:1.0.0
           resources:
             requests:
-              # cpu: 200m
-              cpu: 500m
+              cpu: 200m
               memory: 512M
             limits:
               cpu: 500m
