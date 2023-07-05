@@ -20,6 +20,9 @@ spec:
 
         # If current concurrency is 70% of target, scale up (accommodate containerCreating)
         autoscaling.knative.dev/target-utilization-percentage: "10"
+
+        # Don't create a pod when first deployed, wait for first request
+        autoscaling.knative.dev/initial-scale: "0"
     spec:
       containers:
         - image: dev.local/fibonacci:1.0.0
