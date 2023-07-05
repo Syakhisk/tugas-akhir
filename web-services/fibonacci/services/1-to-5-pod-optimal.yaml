@@ -8,7 +8,7 @@ spec:
     metadata:
       annotations:
         autoscaling.knative.dev/metric: "concurrency"
-        autoscaling.knative.dev/target: "500"
+        autoscaling.knative.dev/target: "1000"
 
         autoscaling.knative.dev/min-scale: "1"
         autoscaling.knative.dev/max-scale: "5"
@@ -21,7 +21,7 @@ spec:
         # If current concurrency is 70% of target, scale up (accommodate containerCreating)
         autoscaling.knative.dev/target-utilization-percentage: "50"
     spec:
-      containerConcurrency: 1000
+      # containerConcurrency: 1000
       containers:
         - image: dev.local/fibonacci:1.0.0
           resources:
@@ -29,5 +29,5 @@ spec:
               cpu: 200m
               memory: 512M
             limits:
-              cpu: 1
+              cpu: 500m
               memory: 512M
