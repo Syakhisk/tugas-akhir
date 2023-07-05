@@ -19,7 +19,7 @@ spec:
         autoscaling.knative.dev/target-burst-capacity: "-1"
 
         # If current concurrency is 70% of target, scale up (accommodate containerCreating)
-        autoscaling.knative.dev/target-utilization-percentage: "25"
+        autoscaling.knative.dev/target-utilization-percentage: "10"
     spec:
       containers:
         - image: dev.local/fibonacci:1.0.0
