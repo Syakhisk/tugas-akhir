@@ -18,13 +18,14 @@ spec:
         # Make all requests are handled by the activator (always active)
         autoscaling.knative.dev/target-burst-capacity: "-1"
 
-        # If current concurrency is 70% of target, scale up (accommodate containerCreating)
+        # If current concurrency is 10% of target, scale up (accommodate containerCreating)
         autoscaling.knative.dev/target-utilization-percentage: "10"
 
-        # Don't create a pod when first deployed, wait for first request
-        # autoscaling.knative.dev/initial-scale: "0"
+        # Make panic window x % of stable window
+        autoscaling.knative.dev/panic-window-percentage: "1.0"
 
-        # Make 2 pods when scaling from zero
+
+        # Make 3 pods when scaling from zero
         autoscaling.knative.dev/activation-scale: "3"
     spec:
       containers:
