@@ -29,8 +29,8 @@ spec:
         # If current concurrency is x% of target, scale up (accommodate containerCreating)
         autoscaling.knative.dev/target-utilization-percentage: "50"
 
-        # # Make 3 pods when scaling from zero
-        # autoscaling.knative.dev/activation-scale: "4"
+        # Make 3 pods when scaling from zero
+        autoscaling.knative.dev/activation-scale: "5"
     spec:
       containerConcurrency: 350
       containers:
