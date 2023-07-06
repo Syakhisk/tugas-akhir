@@ -8,7 +8,7 @@ spec:
     metadata:
       annotations:
         autoscaling.knative.dev/metric: "concurrency"
-        autoscaling.knative.dev/target: "434"
+        autoscaling.knative.dev/target: "650"
 
         autoscaling.knative.dev/min-scale: "10"
         autoscaling.knative.dev/max-scale: "10"
@@ -36,5 +36,5 @@ spec:
               cpu: 100m
               memory: 256M
             limits:
-              cpu: 0.3
+              cpu: 400m
               memory: 512M
