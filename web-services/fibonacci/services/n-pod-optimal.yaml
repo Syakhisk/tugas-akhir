@@ -11,7 +11,7 @@ spec:
         autoscaling.knative.dev/target: "500"
 
         autoscaling.knative.dev/min-scale: "0"
-        autoscaling.knative.dev/max-scale: "8"
+        autoscaling.knative.dev/max-scale: "12"
 
         autoscaling.knative.dev/window: "60s"
 
@@ -26,7 +26,7 @@ spec:
 
 
         # Make 3 pods when scaling from zero
-        autoscaling.knative.dev/activation-scale: "3"
+        autoscaling.knative.dev/activation-scale: "4"
     spec:
       containers:
         - image: dev.local/fibonacci:1.0.0
@@ -35,5 +35,5 @@ spec:
               cpu: 200m
               memory: 512M
             limits:
-              cpu: 500m
+              cpu: 300m
               memory: 512M
