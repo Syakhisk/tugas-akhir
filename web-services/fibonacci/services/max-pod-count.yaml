@@ -33,7 +33,7 @@ spec:
         - image: dev.local/fibonacci:1.0.0
           resources:
             requests:
-              cpu: 100m
+              cpu: 0.5
               memory: 256M
             limits:
               cpu: 1
