@@ -30,7 +30,6 @@ spec:
 
         # # Make 3 pods when scaling from zero
         # autoscaling.knative.dev/activation-scale: "4"
-        autoscaling.knative.dev/activation-scale: "1"
     spec:
       containers:
         - image: dev.local/fibonacci:1.0.0
