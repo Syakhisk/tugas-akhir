@@ -32,7 +32,7 @@ spec:
         # # Make 3 pods when scaling from zero
         # autoscaling.knative.dev/activation-scale: "4"
     spec:
-      # containerConcurrency: 125
+      containerConcurrency: 125
       containers:
         - image: dev.local/fibonacci:1.0.0
           resources:
