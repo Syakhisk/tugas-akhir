@@ -10,8 +10,8 @@ spec:
         autoscaling.knative.dev/metric: "concurrency"
         autoscaling.knative.dev/target: "434"
 
-        autoscaling.knative.dev/min-scale: "10"
-        autoscaling.knative.dev/max-scale: "10"
+        autoscaling.knative.dev/min-scale: "30"
+        autoscaling.knative.dev/max-scale: "30"
 
         # # Stable window
         # autoscaling.knative.dev/window: "60s"
