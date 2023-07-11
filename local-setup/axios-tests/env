@@ -1,0 +1,5 @@
+#!/bin/env bash
+
+export MINIKUBE_IP="$(minikube ip)"
+export KOURIER_PORT="$(kubectl -n kourier-system get service kourier -o 'jsonpath={.spec.ports[?(@.port==80)].nodePort}')"
+
