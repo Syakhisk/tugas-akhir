@@ -1,47 +1,39 @@
 ### Testing
 test.hosts.pve:80 {
-	tls internal
 	respond "Hello, world!"
 }
 
 ### Serverless Nodes
 *.grogu.hosts.pve:80 {
-	tls internal
 	reverse_proxy 10.0.0.10
 }
 
 ### Standalone Nodes
 *.standalone.hosts.pve:80 {
-	tls internal
 	reverse_proxy 10.0.0.30
 }
 
 ### Standalone with separate Load Balancer
 *.standalone-lb.hosts.pve:80 {
-	tls internal
 	reverse_proxy 10.0.0.35
 }
 
 ### Monitoring
 grafana.hosts.pve:80 {
-	tls internal
 	reverse_proxy 10.0.0.40:3000
 }
 
 ### Monitoring
 influxdb.hosts.pve:80 {
-	tls internal
 	reverse_proxy 10.0.0.40:8086
 }
 
 ### Load Tester
 ddosify.hosts.pve:80 {
-	tls internal
 	reverse_proxy 10.0.0.11:8014
 }
 
 fib-go.hosts.pve:80 {
-	tls internal
 	reverse_proxy 10.0.0.100:8080
 }
 
