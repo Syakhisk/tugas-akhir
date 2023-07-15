@@ -11,8 +11,8 @@ $ORIGIN hosts.pve.
 
               IN     NS     ns.hosts.pve.
 
-ns          IN     A      10.15.40.20
-*			IN     A      10.15.40.20
+ns          IN     A      10.21.84.200
+*			IN     A      10.21.84.200
 
 ; grogu		IN     A      10.0.0.10
 ; anakin	IN     A      10.0.0.20
