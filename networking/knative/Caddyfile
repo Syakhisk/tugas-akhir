@@ -19,7 +19,7 @@ prometheus.grogu.hosts.pve:80 {
 
 api-server.grogu.hosts.pve:80 {
 	tls internal
-	reverse_proxy {$MINIKUBE_IP}:8443
+	reverse_proxy https://{$MINIKUBE_IP}:8443
 }
 
 *.grogu.hosts.pve:80 {
