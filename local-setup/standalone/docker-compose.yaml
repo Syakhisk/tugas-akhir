@@ -1,0 +1,76 @@
+version: "3"
+
+services:
+  standalone-1:
+    image: dev.local/fibonacci:1.0.0
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+        reservations:
+          cpus: '1'
+          memory: 512M
+
+  standalone-2:
+    image: dev.local/fibonacci:1.0.0
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+        reservations:
+          cpus: '1'
+          memory: 512M
+
+  standalone-3:
+    image: dev.local/fibonacci:1.0.0
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+        reservations:
+          cpus: '1'
+          memory: 512M
+
+  standalone-4:
+    image: dev.local/fibonacci:1.0.0
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+        reservations:
+          cpus: '1'
+          memory: 512M
+
+  standalone-5:
+    image: dev.local/fibonacci:1.0.0
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+        reservations:
+          cpus: '1'
+          memory: 512M
+
+  standalone-caddy:
+    image: caddy:2.6.4-alpine
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+        reservations:
+          cpus: '1'
+          memory: 512M
+    ports:
+      - 80:80
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+
+volumes:
+  caddy_data:

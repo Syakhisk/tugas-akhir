@@ -8,12 +8,12 @@ spec:
     metadata:
       annotations:
         autoscaling.knative.dev/metric: "concurrency"
-        autoscaling.knative.dev/target: "1500"
+        autoscaling.knative.dev/target: "200"
 
-        autoscaling.knative.dev/min-scale: "2"
-        autoscaling.knative.dev/max-scale: "10"
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
 
-        autoscaling.knative.dev/window: "6s"
+        autoscaling.knative.dev/window: "10s"
 
         # Make all requests are handled by the activator (always active)
         autoscaling.knative.dev/target-burst-capacity: "-1"
@@ -25,8 +25,8 @@ spec:
         - image: dev.local/fib-go:1.0.0
           resources:
             requests:
-              cpu: 100m
-              memory: 512M
+              cpu: 1
+              memory: 1024M
             limits:
               cpu: 1
-              memory: 512M
+              memory: 1024M

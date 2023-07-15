@@ -1,0 +1,184 @@
+Summary:
+  Total:	6.2908 secs
+  Slowest:	6.2894 secs
+  Fastest:	2.5685 secs
+  Average:	4.5698 secs
+  Requests/sec:	15.8961
+  
+  Total data:	1700 bytes
+  Size/request:	17 bytes
+
+Status code distribution:
+  [200]	100 responses
+
+fibonacci-behavior-00005-deployment-6ccb54d984-vfdl2   2/2     Running   0          6s
+
+---
+
+Summary:
+  Total:	5.9922 secs
+  Slowest:	5.9905 secs
+  Fastest:	0.0318 secs
+  Average:	2.9650 secs
+  Requests/sec:	33.3768
+  
+  Total data:	3400 bytes
+  Size/request:	17 bytes
+
+Status code distribution:
+  [200]	200 responses
+
+fibonacci-behavior-00005-deployment-6ccb54d984-vfdl2   2/2     Running   0          12s
+
+---
+
+Summary:
+  Total:	9.3811 secs
+  Slowest:	9.3797 secs
+  Fastest:	0.0752 secs
+  Average:	4.6546 secs
+  Requests/sec:	31.9790
+  
+  Total data:	5100 bytes
+  Size/request:	17 bytes
+
+Status code distribution:
+  [200]	300 responses
+
+fibonacci-behavior-00005-deployment-6ccb54d984-vfdl2   2/2     Running   0          22s
+
+
+---
+
+Summary:
+  Total:	6.1913 secs
+  Slowest:	6.1899 secs
+  Fastest:	0.0407 secs
+  Average:	3.0404 secs
+  Requests/sec:	64.6073
+  
+  Total data:	6800 bytes
+  Size/request:	17 bytes
+
+Status code distribution:
+  [200]	400 responses
+
+fibonacci-behavior-00005-deployment-6ccb54d984-vfdl2   2/2     Running   0          28s
+
+
+---
+
+Summary:
+  Total:	7.9808 secs
+  Slowest:	7.9792 secs
+  Fastest:	0.0264 secs
+  Average:	3.9189 secs
+  Requests/sec:	62.6507
+  
+  Total data:	8500 bytes
+  Size/request:	17 bytes
+
+Status code distribution:
+  [200]	500 responses
+
+fibonacci-behavior-00005-deployment-6ccb54d984-vfdl2   2/2     Running   0          36s
+
+
+---
+
+Summary:
+  Total:	9.5698 secs
+  Slowest:	9.4880 secs
+  Fastest:	0.0692 secs
+  Average:	4.7548 secs
+  Requests/sec:	62.6971
+  
+  Total data:	10200 bytes
+  Size/request:	17 bytes
+
+Status code distribution:
+  [200]	600 responses
+
+fibonacci-behavior-00005-deployment-6ccb54d984-vfdl2   2/2     Running   0          46s
+fibonacci-behavior-00005-deployment-6ccb54d984-kl9vb   2/2     Running   0          4s
+
+
+---
+
+Summary:
+  Total:	7.8924 secs
+  Slowest:	7.8909 secs
+  Fastest:	0.0286 secs
+  Average:	3.9125 secs
+  Requests/sec:	88.6927
+  
+  Total data:	11900 bytes
+  Size/request:	17 bytes
+
+Status code distribution:
+  [200]	700 responses
+
+fibonacci-behavior-00005-deployment-6ccb54d984-vfdl2   2/2     Running   0          54s
+fibonacci-behavior-00005-deployment-6ccb54d984-kl9vb   2/2     Running   0          12s
+
+
+---
+
+Summary:
+  Total:	8.3820 secs
+  Slowest:	8.3780 secs
+  Fastest:	0.1093 secs
+  Average:	4.1522 secs
+  Requests/sec:	95.4421
+  
+  Total data:	13600 bytes
+  Size/request:	17 bytes
+
+Status code distribution:
+  [200]	800 responses
+
+fibonacci-behavior-00005-deployment-6ccb54d984-vfdl2   2/2     Running   0          62s
+fibonacci-behavior-00005-deployment-6ccb54d984-kl9vb   2/2     Running   0          20s
+
+
+---
+
+Summary:
+  Total:	9.7024 secs
+  Slowest:	9.6830 secs
+  Fastest:	0.1484 secs
+  Average:	4.9104 secs
+  Requests/sec:	92.7609
+  
+  Total data:	15300 bytes
+  Size/request:	17 bytes
+
+Status code distribution:
+  [200]	900 responses
+
+fibonacci-behavior-00005-deployment-6ccb54d984-vfdl2   2/2     Running   0          72s
+fibonacci-behavior-00005-deployment-6ccb54d984-kl9vb   2/2     Running   0          30s
+fibonacci-behavior-00005-deployment-6ccb54d984-7v527   2/2     Running   0          4s
+
+
+---
+
+Summary:
+  Total:	9.6783 secs
+  Slowest:	9.6749 secs
+  Fastest:	0.0359 secs
+  Average:	4.3623 secs
+  Requests/sec:	103.3240
+  
+  Total data:	17000 bytes
+  Size/request:	17 bytes
+
+Status code distribution:
+  [200]	1000 responses
+
+fibonacci-behavior-00005-deployment-6ccb54d984-vfdl2   2/2     Running       0          82s
+fibonacci-behavior-00005-deployment-6ccb54d984-kl9vb   2/2     Running       0          40s
+fibonacci-behavior-00005-deployment-6ccb54d984-7v527   2/2     Terminating   0          14s
+fibonacci-behavior-00005-deployment-6ccb54d984-m7wtl   2/2     Running       0          6s
+
+---

@@ -3,3 +3,6 @@
 export MINIKUBE_IP="$(minikube ip)"
 export KOURIER_PORT="$(kubectl -n kourier-system get service kourier -o 'jsonpath={.spec.ports[?(@.port==80)].nodePort}')"
 
+export SWARM_IP="$(docker node inspect self --format '{{ .Status.Addr  }}')"
+export CADDY_PORT="8080"
+

@@ -1,0 +1,619 @@
+
+Summary:
+  Total:	4.1787 secs
+  Slowest:	4.1760 secs
+  Fastest:	2.1155 secs
+  Average:	3.2084 secs
+  Requests/sec:	47.8612
+  
+  Total data:	3400 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  2.116 [1]	|■■
+  2.322 [10]	|■■■■■■■■■■■■■■■■■
+  2.528 [21]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.734 [19]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.940 [21]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.146 [19]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.352 [22]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.558 [20]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.764 [24]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.970 [23]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.176 [20]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 2.4249 secs
+  25% in 2.7314 secs
+  50% in 3.2328 secs
+  75% in 3.7096 secs
+  90% in 3.9753 secs
+  95% in 4.0636 secs
+  99% in 4.1644 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0398 secs, 2.1155 secs, 4.1760 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0036 secs, 0.0000 secs, 0.0404 secs
+  resp wait:	3.1591 secs, 2.0402 secs, 4.1354 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0002 secs
+
+Status code distribution:
+  [200]	200 responses
+
+
+
+
+
+---
+
+NAME                                                   READY   STATUS    RESTARTS   AGE
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r662c   2/2     Running   0          4s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-dr7k2   2/2     Running   0          2s
+
+
+---
+
+
+Summary:
+  Total:	3.1847 secs
+  Slowest:	3.1793 secs
+  Fastest:	0.0653 secs
+  Average:	1.5884 secs
+  Requests/sec:	188.4023
+  
+  Total data:	10200 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.065 [1]	|■
+  0.377 [62]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.688 [58]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.000 [68]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.311 [68]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.622 [50]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.934 [61]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.245 [64]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.557 [54]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.868 [56]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.179 [58]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 0.3462 secs
+  25% in 0.8023 secs
+  50% in 1.5849 secs
+  75% in 2.3567 secs
+  90% in 2.8599 secs
+  95% in 3.0118 secs
+  99% in 3.1540 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0174 secs, 0.0653 secs, 3.1793 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0104 secs, 0.0000 secs, 0.1095 secs
+  resp wait:	1.5121 secs, 0.0322 secs, 3.0330 secs
+  resp read:	0.0003 secs, 0.0000 secs, 0.0756 secs
+
+Status code distribution:
+  [200]	600 responses
+
+
+
+
+
+---
+
+NAME                                                   READY   STATUS    RESTARTS   AGE
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r662c   2/2     Running   0          7s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-dr7k2   2/2     Running   0          5s
+
+
+---
+
+
+Summary:
+  Total:	5.2973 secs
+  Slowest:	5.2934 secs
+  Fastest:	0.0452 secs
+  Average:	2.6139 secs
+  Requests/sec:	188.7760
+  
+  Total data:	17000 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.045 [1]	|
+  0.570 [106]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.095 [106]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.620 [106]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.144 [102]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.669 [98]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.194 [96]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.719 [88]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.244 [93]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.769 [108]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  5.293 [96]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 0.5437 secs
+  25% in 1.2680 secs
+  50% in 2.5502 secs
+  75% in 4.0111 secs
+  90% in 4.7600 secs
+  95% in 5.0082 secs
+  99% in 5.2138 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0130 secs, 0.0452 secs, 5.2934 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0093 secs, 0.0000 secs, 0.0869 secs
+  resp wait:	2.4980 secs, 0.0395 secs, 5.1192 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0293 secs
+
+Status code distribution:
+  [200]	1000 responses
+
+
+
+
+
+---
+
+NAME                                                   READY   STATUS    RESTARTS   AGE
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r662c   2/2     Running   0          12s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-dr7k2   2/2     Running   0          10s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bz7c2   2/2     Running   0          2s
+
+
+---
+
+
+Summary:
+  Total:	5.8684 secs
+  Slowest:	5.8662 secs
+  Fastest:	0.1374 secs
+  Average:	2.8583 secs
+  Requests/sec:	238.5671
+  
+  Total data:	23800 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.137 [1]	|
+  0.710 [145]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.283 [160]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.856 [148]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.429 [155]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.002 [147]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.575 [146]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.148 [124]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.720 [136]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  5.293 [119]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  5.866 [119]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 0.6894 secs
+  25% in 1.4513 secs
+  50% in 2.7792 secs
+  75% in 4.2605 secs
+  90% in 5.1851 secs
+  95% in 5.4790 secs
+  99% in 5.7162 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0646 secs, 0.1374 secs, 5.8662 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0070 secs, 0.0000 secs, 0.0868 secs
+  resp wait:	2.7264 secs, 0.0365 secs, 5.6399 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0003 secs
+
+Status code distribution:
+  [200]	1400 responses
+
+
+
+
+
+---
+
+NAME                                                   READY   STATUS    RESTARTS   AGE
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r662c   2/2     Running   0          18s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-dr7k2   2/2     Running   0          16s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bz7c2   2/2     Running   0          8s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-svj89   2/2     Running   0          2s
+
+
+---
+
+
+Summary:
+  Total:	7.0542 secs
+  Slowest:	7.0418 secs
+  Fastest:	0.0724 secs
+  Average:	3.5665 secs
+  Requests/sec:	255.1685
+  
+  Total data:	30600 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.072 [1]	|
+  0.769 [160]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.466 [182]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.163 [215]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.860 [173]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.557 [169]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.254 [174]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.951 [173]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  5.648 [186]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  6.345 [209]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  7.042 [158]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 0.8384 secs
+  25% in 1.8186 secs
+  50% in 3.5621 secs
+  75% in 5.3541 secs
+  90% in 6.2730 secs
+  95% in 6.6250 secs
+  99% in 6.9185 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0643 secs, 0.0724 secs, 7.0418 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0083 secs, 0.0000 secs, 0.1032 secs
+  resp wait:	3.3984 secs, 0.0498 secs, 6.7952 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0007 secs
+
+Status code distribution:
+  [200]	1800 responses
+
+
+
+
+
+---
+
+NAME                                                   READY   STATUS        RESTARTS   AGE
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r662c   2/2     Running       0          26s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-dr7k2   2/2     Running       0          24s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bz7c2   2/2     Running       0          16s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-svj89   2/2     Terminating   0          10s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-lczfc   2/2     Running       0          4s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-wxpc9   2/2     Running       0          4s
+
+
+---
+
+
+Summary:
+  Total:	7.3919 secs
+  Slowest:	7.3877 secs
+  Fastest:	0.0395 secs
+  Average:	3.7349 secs
+  Requests/sec:	297.6221
+  
+  Total data:	38808 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.040 [1]	|
+  0.774 [221]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.509 [231]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.244 [217]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.979 [204]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.714 [200]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.448 [229]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  5.183 [228]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  5.918 [209]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  6.653 [245]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  7.388 [215]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 0.7700 secs
+  25% in 1.7959 secs
+  50% in 3.8070 secs
+  75% in 5.6178 secs
+  90% in 6.6282 secs
+  95% in 6.9778 secs
+  99% in 7.2553 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.1868 secs, 0.0395 secs, 7.3877 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0006 secs, 0.0000 secs, 0.0450 secs
+  resp wait:	3.4852 secs, 0.0206 secs, 7.1437 secs
+  resp read:	0.0002 secs, 0.0000 secs, 0.1397 secs
+
+Status code distribution:
+  [200]	2178 responses
+  [503]	22 responses
+
+
+
+
+
+---
+
+NAME                                                   READY   STATUS        RESTARTS   AGE
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r662c   2/2     Running       0          33s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-dr7k2   2/2     Running       0          31s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bz7c2   2/2     Running       0          23s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-svj89   2/2     Terminating   0          17s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-lczfc   2/2     Running       0          11s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-wxpc9   2/2     Terminating   0          11s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bh4zs   2/2     Running       0          5s
+
+
+---
+
+
+Summary:
+  Total:	6.9551 secs
+  Slowest:	6.9504 secs
+  Fastest:	0.0574 secs
+  Average:	3.0095 secs
+  Requests/sec:	373.8248
+  
+  Total data:	69096 bytes
+  Size/request:	26 bytes
+
+Response time histogram:
+  0.057 [1]	|
+  0.747 [488]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.436 [324]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.125 [259]	|■■■■■■■■■■■■■■■■■■■■■
+  2.815 [244]	|■■■■■■■■■■■■■■■■■■■■
+  3.504 [222]	|■■■■■■■■■■■■■■■■■■
+  4.193 [221]	|■■■■■■■■■■■■■■■■■■
+  4.882 [226]	|■■■■■■■■■■■■■■■■■■■
+  5.572 [247]	|■■■■■■■■■■■■■■■■■■■■
+  6.261 [193]	|■■■■■■■■■■■■■■■■
+  6.950 [175]	|■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 0.6158 secs
+  25% in 0.9610 secs
+  50% in 2.7558 secs
+  75% in 4.7590 secs
+  90% in 5.9555 secs
+  95% in 6.3694 secs
+  99% in 6.7724 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0733 secs, 0.0574 secs, 6.9504 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0070 secs, 0.0000 secs, 0.2910 secs
+  resp wait:	2.7769 secs, 0.0520 secs, 6.7236 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0148 secs
+
+Status code distribution:
+  [200]	2211 responses
+  [503]	389 responses
+
+
+
+
+
+---
+
+NAME                                                   READY   STATUS        RESTARTS   AGE
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r662c   2/2     Running       0          40s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-dr7k2   2/2     Running       0          38s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bz7c2   2/2     Running       0          30s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-svj89   2/2     Terminating   0          24s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-lczfc   2/2     Running       0          18s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-wxpc9   2/2     Terminating   0          18s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bh4zs   2/2     Running       0          12s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-tvzqm   2/2     Terminating   0          4s
+
+
+---
+
+
+Summary:
+  Total:	7.1206 secs
+  Slowest:	7.1048 secs
+  Fastest:	0.1359 secs
+  Average:	2.7878 secs
+  Requests/sec:	421.3157
+  
+  Total data:	102520 bytes
+  Size/request:	34 bytes
+
+Response time histogram:
+  0.136 [1]	|
+  0.833 [611]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.530 [648]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.227 [262]	|■■■■■■■■■■■■■■■■
+  2.923 [247]	|■■■■■■■■■■■■■■■
+  3.620 [234]	|■■■■■■■■■■■■■■
+  4.317 [212]	|■■■■■■■■■■■■■
+  5.014 [177]	|■■■■■■■■■■■
+  5.711 [174]	|■■■■■■■■■■■
+  6.408 [211]	|■■■■■■■■■■■■■
+  7.105 [223]	|■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 0.7711 secs
+  25% in 0.8729 secs
+  50% in 2.1661 secs
+  75% in 4.4339 secs
+  90% in 6.1731 secs
+  95% in 6.6138 secs
+  99% in 6.9663 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.2062 secs, 0.1359 secs, 7.1048 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0241 secs, 0.0000 secs, 0.3587 secs
+  resp wait:	2.5156 secs, 0.0209 secs, 6.7848 secs
+  resp read:	0.0005 secs, 0.0000 secs, 0.2985 secs
+
+Status code distribution:
+  [200]	2195 responses
+  [503]	805 responses
+
+
+
+
+
+---
+
+NAME                                                   READY   STATUS        RESTARTS   AGE
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r662c   2/2     Running       0          47s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-dr7k2   2/2     Running       0          45s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bz7c2   2/2     Running       0          37s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-svj89   1/2     Terminating   0          31s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-lczfc   2/2     Running       0          25s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-wxpc9   2/2     Terminating   0          25s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bh4zs   2/2     Terminating   0          19s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-tvzqm   2/2     Terminating   0          11s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-8lzkp   2/2     Terminating   0          3s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-h9fqm   2/2     Running       0          3s
+
+
+---
+
+
+Summary:
+  Total:	8.8255 secs
+  Slowest:	8.8205 secs
+  Fastest:	0.0598 secs
+  Average:	4.0383 secs
+  Requests/sec:	385.2487
+  
+  Total data:	115784 bytes
+  Size/request:	34 bytes
+
+Response time histogram:
+  0.060 [1]	|
+  0.936 [61]	|■■
+  1.812 [342]	|■■■■■■■■■■■■
+  2.688 [1157]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.564 [213]	|■■■■■■■
+  4.440 [208]	|■■■■■■■
+  5.316 [300]	|■■■■■■■■■■
+  6.192 [298]	|■■■■■■■■■■
+  7.068 [296]	|■■■■■■■■■■
+  7.944 [287]	|■■■■■■■■■■
+  8.820 [237]	|■■■■■■■■
+
+
+Latency distribution:
+  10% in 1.7942 secs
+  25% in 1.9465 secs
+  50% in 3.2877 secs
+  75% in 6.1047 secs
+  90% in 7.6294 secs
+  95% in 8.2021 secs
+  99% in 8.6615 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.5811 secs, 0.0598 secs, 8.8205 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0509 secs, 0.0000 secs, 0.6519 secs
+  resp wait:	2.7629 secs, 0.0006 secs, 8.0956 secs
+  resp read:	0.0055 secs, 0.0000 secs, 1.1544 secs
+
+Status code distribution:
+  [200]	2494 responses
+  [503]	906 responses
+
+
+
+
+
+---
+
+NAME                                                   READY   STATUS              RESTARTS   AGE
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r662c   2/2     Running             0          56s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-dr7k2   2/2     Running             0          54s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bz7c2   2/2     Running             0          46s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-lczfc   2/2     Running             0          34s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-wxpc9   1/2     Terminating         0          34s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bh4zs   2/2     Terminating         0          28s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-tvzqm   2/2     Terminating         0          20s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-8lzkp   2/2     Terminating         0          12s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-h9fqm   2/2     Terminating         0          12s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r5z68   2/2     Running             0          6s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-q2hsj   0/2     ContainerCreating   0          0s
+
+
+---
+
+
+Summary:
+  Total:	9.7661 secs
+  Slowest:	9.7491 secs
+  Fastest:	0.1691 secs
+  Average:	5.0680 secs
+  Requests/sec:	389.0998
+  
+  Total data:	131224 bytes
+  Size/request:	34 bytes
+
+Response time histogram:
+  0.169 [1]	|
+  1.127 [130]	|■■■■
+  2.085 [66]	|■■
+  3.043 [182]	|■■■■■
+  4.001 [1485]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.959 [318]	|■■■■■■■■■
+  5.917 [309]	|■■■■■■■■
+  6.875 [302]	|■■■■■■■■
+  7.833 [359]	|■■■■■■■■■■
+  8.791 [356]	|■■■■■■■■■■
+  9.749 [292]	|■■■■■■■■
+
+
+Latency distribution:
+  10% in 3.0704 secs
+  25% in 3.4812 secs
+  50% in 4.1088 secs
+  75% in 7.0365 secs
+  90% in 8.5508 secs
+  95% in 9.0825 secs
+  99% in 9.5431 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.9160 secs, 0.1691 secs, 9.7491 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0451 secs, 0.0000 secs, 1.0134 secs
+  resp wait:	2.6013 secs, 0.0021 secs, 7.8657 secs
+  resp read:	0.0201 secs, 0.0000 secs, 1.7830 secs
+
+Status code distribution:
+  [200]	2759 responses
+  [503]	1041 responses
+
+
+
+
+
+---
+
+NAME                                                   READY   STATUS              RESTARTS   AGE
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r662c   2/2     Running             0          66s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-dr7k2   2/2     Running             0          64s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bz7c2   2/2     Running             0          56s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-lczfc   2/2     Running             0          44s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-bh4zs   2/2     Terminating         0          38s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-tvzqm   1/2     Terminating         0          30s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-8lzkp   2/2     Terminating         0          22s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-h9fqm   2/2     Terminating         0          22s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-r5z68   2/2     Running             0          16s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-q2hsj   2/2     Terminating         0          10s
+fibonacci-behavior-00033-deployment-5f6f6fb4c7-496q8   0/2     ContainerCreating   0          0s
+
+
+---
+
