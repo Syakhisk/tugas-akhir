@@ -10,6 +10,11 @@ test.hosts.pve {
 	reverse_proxy 10.0.0.10
 }
 
+container.standalone.hosts.pve {
+	tls internal
+	reverse_proxy 10.0.0.50:3000
+}
+
 ### Standalone Nodes
 *.standalone.hosts.pve {
 	tls internal
