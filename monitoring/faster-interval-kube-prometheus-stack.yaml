@@ -1,0 +1,16 @@
+server:
+  enabled: true
+  namespaces:
+    - default
+  global:
+    scrape_interval: 10s
+    scrape_timeout: 10s
+    evaluation_interval: 1m
+kube-state-metrics:
+  metricLabelsAllowlist:
+    - pods=[*]
+    - deployments=[app.kubernetes.io/name,app.kubernetes.io/component,app.kubernetes.io/instance]
+prometheus:
+  prometheusSpec:
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelectorNilUsesHelmValues: false
