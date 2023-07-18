@@ -1,0 +1,452 @@
+
+Summary:
+  Total:	3.8979 secs
+  Slowest:	3.8965 secs
+  Fastest:	3.2003 secs
+  Average:	3.5087 secs
+  Requests/sec:	25.6548
+  
+  Total data:	1700 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  3.200 [1]	|■■
+  3.270 [20]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.340 [9]	|■■■■■■■■■■■■■■■■■■
+  3.409 [10]	|■■■■■■■■■■■■■■■■■■■■
+  3.479 [7]	|■■■■■■■■■■■■■■
+  3.548 [8]	|■■■■■■■■■■■■■■■■
+  3.618 [10]	|■■■■■■■■■■■■■■■■■■■■
+  3.688 [5]	|■■■■■■■■■■
+  3.757 [12]	|■■■■■■■■■■■■■■■■■■■■■■■■
+  3.827 [8]	|■■■■■■■■■■■■■■■■
+  3.896 [10]	|■■■■■■■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 3.2016 secs
+  25% in 3.2899 secs
+  50% in 3.5016 secs
+  75% in 3.6955 secs
+  90% in 3.8389 secs
+  95% in 3.8674 secs
+  99% in 3.8965 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.3063 secs, 3.2003 secs, 3.8965 secs
+  DNS-lookup:	0.1310 secs, 0.1217 secs, 0.1515 secs
+  req write:	0.0001 secs, 0.0000 secs, 0.0005 secs
+  resp wait:	3.2022 secs, 2.8450 secs, 3.6394 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0001 secs
+
+Status code distribution:
+  [200]	100 responses
+
+
+
+
+
+---
+
+
+Summary:
+  Total:	3.9058 secs
+  Slowest:	3.9045 secs
+  Fastest:	0.6008 secs
+  Average:	1.4964 secs
+  Requests/sec:	51.2065
+  
+  Total data:	3400 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.601 [1]	|■
+  0.931 [59]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.262 [41]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.592 [37]	|■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.922 [36]	|■■■■■■■■■■■■■■■■■■■■■■■■
+  2.253 [3]	|■■
+  2.583 [0]	|
+  2.913 [0]	|
+  3.244 [0]	|
+  3.574 [0]	|
+  3.904 [23]	|■■■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 0.6254 secs
+  25% in 0.8778 secs
+  50% in 1.2520 secs
+  75% in 1.7217 secs
+  90% in 3.9040 secs
+  95% in 3.9043 secs
+  99% in 3.9044 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.3491 secs, 0.6008 secs, 3.9045 secs
+  DNS-lookup:	0.1590 secs, 0.1260 secs, 0.1889 secs
+  req write:	0.0001 secs, 0.0000 secs, 0.0004 secs
+  resp wait:	1.1289 secs, 0.2693 secs, 3.4479 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0002 secs
+
+Status code distribution:
+  [200]	200 responses
+
+
+
+
+
+---
+
+
+Summary:
+  Total:	5.7496 secs
+  Slowest:	5.7477 secs
+  Fastest:	0.3817 secs
+  Average:	2.6585 secs
+  Requests/sec:	69.5702
+  
+  Total data:	6800 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.382 [1]	|■
+  0.918 [58]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.455 [68]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.992 [64]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.528 [64]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.065 [15]	|■■■■■■■■■
+  3.601 [0]	|
+  4.138 [0]	|
+  4.675 [51]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  5.211 [31]	|■■■■■■■■■■■■■■■■■■
+  5.748 [48]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 0.7499 secs
+  25% in 1.2359 secs
+  50% in 2.0626 secs
+  75% in 4.6705 secs
+  90% in 5.2824 secs
+  95% in 5.4525 secs
+  99% in 5.7188 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.3060 secs, 0.3817 secs, 5.7477 secs
+  DNS-lookup:	0.1569 secs, 0.0991 secs, 0.1956 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0004 secs
+  resp wait:	2.3157 secs, 0.1574 secs, 5.2954 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0002 secs
+
+Status code distribution:
+  [200]	400 responses
+
+
+
+
+
+---
+
+
+Summary:
+  Total:	5.1231 secs
+  Slowest:	5.1221 secs
+  Fastest:	0.4869 secs
+  Average:	3.6364 secs
+  Requests/sec:	156.1565
+  
+  Total data:	13600 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.487 [1]	|
+  0.950 [49]	|■■■■■■
+  1.414 [21]	|■■■
+  1.877 [22]	|■■■
+  2.341 [0]	|
+  2.805 [0]	|
+  3.268 [0]	|
+  3.732 [198]	|■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.195 [310]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.659 [184]	|■■■■■■■■■■■■■■■■■■■■■■■■
+  5.122 [15]	|■■
+
+
+Latency distribution:
+  10% in 1.4629 secs
+  25% in 3.6131 secs
+  50% in 3.9154 secs
+  75% in 4.1922 secs
+  90% in 4.4345 secs
+  95% in 4.5441 secs
+  99% in 4.9197 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.4007 secs, 0.4869 secs, 5.1221 secs
+  DNS-lookup:	0.2076 secs, 0.1272 secs, 0.2561 secs
+  req write:	0.0001 secs, 0.0000 secs, 0.0010 secs
+  resp wait:	3.1629 secs, 0.1973 secs, 4.7157 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0002 secs
+
+Status code distribution:
+  [200]	800 responses
+
+
+
+
+
+---
+
+
+Summary:
+  Total:	4.9936 secs
+  Slowest:	4.9914 secs
+  Fastest:	0.5137 secs
+  Average:	3.5165 secs
+  Requests/sec:	200.2551
+  
+  Total data:	17000 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.514 [1]	|
+  0.961 [39]	|■■■■■
+  1.409 [0]	|
+  1.857 [0]	|
+  2.305 [0]	|
+  2.753 [0]	|
+  3.200 [297]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.648 [275]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.096 [139]	|■■■■■■■■■■■■■■■■■■■
+  4.544 [148]	|■■■■■■■■■■■■■■■■■■■■
+  4.991 [101]	|■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 2.9494 secs
+  25% in 3.1033 secs
+  50% in 3.4060 secs
+  75% in 4.0933 secs
+  90% in 4.5538 secs
+  95% in 4.7518 secs
+  99% in 4.9232 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.3792 secs, 0.5137 secs, 4.9914 secs
+  DNS-lookup:	0.1771 secs, 0.0911 secs, 0.2123 secs
+  req write:	0.0001 secs, 0.0000 secs, 0.0076 secs
+  resp wait:	3.0845 secs, 0.2164 secs, 4.5993 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0003 secs
+
+Status code distribution:
+  [200]	1000 responses
+
+
+
+
+
+---
+
+
+Summary:
+  Total:	24.2935 secs
+  Slowest:	17.9693 secs
+  Fastest:	0.0659 secs
+  Average:	3.8758 secs
+  Requests/sec:	82.3264
+  
+  Total data:	32266 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.066 [1]	|
+  1.856 [318]	|■■■■■■■■■■■■■■■
+  3.647 [607]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  5.437 [824]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  7.227 [52]	|■■■
+  9.018 [7]	|
+  10.808 [25]	|■
+  12.598 [23]	|■
+  14.389 [6]	|
+  16.179 [5]	|
+  17.969 [30]	|■
+
+
+Latency distribution:
+  10% in 0.7535 secs
+  25% in 2.7804 secs
+  50% in 3.7343 secs
+  75% in 4.6660 secs
+  90% in 5.0908 secs
+  95% in 7.8970 secs
+  99% in 17.5677 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.8121 secs, 0.0659 secs, 17.9693 secs
+  DNS-lookup:	0.1491 secs, 0.0000 secs, 0.3300 secs
+  req write:	0.0001 secs, 0.0000 secs, 0.0032 secs
+  resp wait:	3.0260 secs, 0.0657 secs, 17.9693 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0009 secs
+
+Status code distribution:
+  [200]	1898 responses
+
+Error distribution:
+  [102]	Get "https://fibonacci-behavior.grogu.hosts.pve": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
+
+
+---
+
+
+Summary:
+  Total:	14.9679 secs
+  Slowest:	9.0872 secs
+  Fastest:	0.0638 secs
+  Average:	2.9010 secs
+  Requests/sec:	267.2385
+  
+  Total data:	68000 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.064 [1]	|
+  0.966 [832]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.869 [569]	|■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.771 [486]	|■■■■■■■■■■■■■■■■■■■■■
+  3.673 [924]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.576 [410]	|■■■■■■■■■■■■■■■■■■
+  5.478 [241]	|■■■■■■■■■■
+  6.380 [411]	|■■■■■■■■■■■■■■■■■■
+  7.283 [110]	|■■■■■
+  8.185 [2]	|
+  9.087 [14]	|■
+
+
+Latency distribution:
+  10% in 0.5593 secs
+  25% in 1.1986 secs
+  50% in 3.0463 secs
+  75% in 3.9486 secs
+  90% in 5.6342 secs
+  95% in 6.0440 secs
+  99% in 6.8142 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.4013 secs, 0.0638 secs, 9.0872 secs
+  DNS-lookup:	0.2933 secs, 0.0000 secs, 1.2059 secs
+  req write:	0.0001 secs, 0.0000 secs, 0.0103 secs
+  resp wait:	2.4992 secs, 0.0636 secs, 9.0871 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0013 secs
+
+Status code distribution:
+  [200]	4000 responses
+
+
+
+
+
+---
+
+
+Summary:
+  Total:	22.9783 secs
+  Slowest:	12.0489 secs
+  Fastest:	0.0640 secs
+  Average:	1.9162 secs
+  Requests/sec:	348.1540
+  
+  Total data:	136000 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.064 [1]	|
+  1.262 [3929]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.461 [1352]	|■■■■■■■■■■■■■■
+  3.659 [1424]	|■■■■■■■■■■■■■■
+  4.858 [1052]	|■■■■■■■■■■■
+  6.056 [237]	|■■
+  7.255 [2]	|
+  8.453 [0]	|
+  9.652 [0]	|
+  10.850 [0]	|
+  12.049 [3]	|
+
+
+Latency distribution:
+  10% in 0.4202 secs
+  25% in 0.7669 secs
+  50% in 1.2995 secs
+  75% in 3.0014 secs
+  90% in 4.2432 secs
+  95% in 4.6300 secs
+  99% in 5.3030 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0453 secs, 0.0640 secs, 12.0489 secs
+  DNS-lookup:	0.0270 secs, 0.0000 secs, 0.2439 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0090 secs
+  resp wait:	1.8628 secs, 0.0639 secs, 12.0487 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0061 secs
+
+Status code distribution:
+  [200]	8000 responses
+
+
+
+
+
+---
+
+
+Summary:
+  Total:	47.0086 secs
+  Slowest:	14.9224 secs
+  Fastest:	0.0620 secs
+  Average:	2.2397 secs
+  Requests/sec:	340.3633
+  
+  Total data:	271830 bytes
+  Size/request:	17 bytes
+
+Response time histogram:
+  0.062 [1]	|
+  1.548 [7042]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.034 [3590]	|■■■■■■■■■■■■■■■■■■■■
+  4.520 [3871]	|■■■■■■■■■■■■■■■■■■■■■■
+  6.006 [1348]	|■■■■■■■■
+  7.492 [47]	|
+  8.978 [52]	|
+  10.464 [12]	|
+  11.950 [1]	|
+  13.436 [19]	|
+  14.922 [7]	|
+
+
+Latency distribution:
+  10% in 0.3422 secs
+  25% in 0.8325 secs
+  50% in 1.9199 secs
+  75% in 3.4892 secs
+  90% in 4.4625 secs
+  95% in 4.8228 secs
+  99% in 5.8616 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0332 secs, 0.0620 secs, 14.9224 secs
+  DNS-lookup:	0.0176 secs, 0.0000 secs, 0.3121 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0008 secs
+  resp wait:	2.2061 secs, 0.0619 secs, 14.9223 secs
+  resp read:	0.0001 secs, 0.0000 secs, 0.0009 secs
+
+Status code distribution:
+  [200]	15990 responses
+
+Error distribution:
+  [10]	Get "https://fibonacci-behavior.grogu.hosts.pve": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
+
+
+---
+
