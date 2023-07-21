@@ -12,7 +12,7 @@ test.hosts.pve {
 
 container.standalone.hosts.pve {
 	tls internal
-	reverse_proxy 10.0.0.50:3000
+	reverse_proxy 10.0.0.51:3000
 }
 
 ### Standalone Nodes

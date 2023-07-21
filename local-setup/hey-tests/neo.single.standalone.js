@@ -8,9 +8,9 @@ const datetime = new Date()
   .replace(/\/|\./g, "-")
   .replace(/ /g, "_");
 
-const counts = [800, 1000, 1200, 1300, 1400, 1500, 1600];
+const counts = [800, 1000, 1200, 1300, 1500];
 
-const filename = `results/single-unit-new-standalone-raw-${counts[0]}-${
+const filename = `results/neo-single-standalone-${counts[0]}-${
   counts[counts.length - 1]
 }-${datetime}`;
 
@@ -23,6 +23,7 @@ for (let count of counts) {
   const interval = setInterval(() => {
     process.stdout.write(`${++seconds} seconds elapsed \r`);
   }, 1000);
+
   await new Promise((resolve) => setTimeout(resolve, 30_000));
   clearInterval(interval);
 
