@@ -1,7 +1,9 @@
 import { $, fs } from "zx";
 
-const baseURL = `https://fibonacci-behavior.grogu.hosts.pve`;
-const run = (count) => $`hey -n ${count} -c ${count < 1000 ? count : 1000} ${baseURL}`;
+const host = `fibonacci-behavior.default.local.knative`;
+const baseURL = `http://${process.env["MINIKUBE_IP"]}:${process.env["KOURIER_PORT"]}`;
+
+const run = (count) => $`hey -n ${count} -c ${count < 1000 ? count : 1000} -host ${host} ${baseURL}`;
 
 const datetime = new Date()
   .toLocaleString("id", { timeStyle: "medium", dateStyle: "short" })
@@ -16,9 +18,9 @@ const counts = [
   1000,
   2000,
   4000,
-  // 8000,
-  // 16000,
-  // 32000,
+  8000,
+  16000,
+  32000,
 ]
 
 const filename = `results/remote-raw-${counts[0]}-${counts[counts.length - 1]}-${datetime}`;
