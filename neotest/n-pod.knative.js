@@ -1,10 +1,10 @@
 import { $, fs } from "zx";
 
-const svc = "fibonacci-n-pod-one";
-// const svc = "fibonacci-n-pod-six";
+const target = $.env["TARGET"];
+if (!target) throw new Error("TARGET env var is required");
 
+const svc = `fibonacci-n-pod-${target}`;
 const host = `${svc}.grogu.hosts.pve`;
-
 const baseURL = "http://10.0.0.10";
 
 const run = (count) => $`hey -n ${count} -c ${count} -host ${host} ${baseURL}`;
