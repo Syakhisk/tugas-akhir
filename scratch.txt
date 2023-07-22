@@ -22,3 +22,8 @@ TARGET=one node n-pod.knative.js
 N=XXX; hey -n $N -c $N -host .grogu.hosts.pve http://10.0.0.
 curl -Lk -H "Host: .grogu.hosts.pve" http://10.0.0.
 
+
+--
+-- Helm
+helm upgrade --recreate-pods --wait -n monitoring -f faster-interval-kube-prometheus-stack.yaml prometheus prometheus-community/kube-prometheus-stack
+
