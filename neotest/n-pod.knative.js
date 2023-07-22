@@ -7,7 +7,7 @@ const baseURL = "http://10.0.0.10";
 
 const run = (count) => $`hey -n ${count} -c 1000 -host ${host} ${baseURL}`;
 
-const counts = [1000, 2000, 3000, 4000, 5000];
+const counts = [800, 1000, 1200, 1400, 1600];
 
 const { stdout: scriptname } = await $`basename "${process.argv[1]}" | awk -F '.js' '{print $1}'`;
 const { stdout: datetime } = await $`TZ='Asia/Jakarta' date +%Y-%m-%d_%H-%M-%S`;
