@@ -1,11 +1,13 @@
 import { $, fs } from "zx";
 
 const svc = "fibonacci-n-pod-one";
+// const svc = "fibonacci-n-pod-six";
+
 const host = `${svc}.grogu.hosts.pve`;
 
 const baseURL = "http://10.0.0.10";
 
-const run = (count) => $`hey -n ${count} -c 1000 -host ${host} ${baseURL}`;
+const run = (count) => $`hey -n ${count} -c ${count} -host ${host} ${baseURL}`;
 
 const counts = [800, 1000, 1200, 1400, 1600];
 
