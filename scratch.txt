@@ -13,6 +13,9 @@ N=5000; hey -n $N -c $N -host fibonacci-n-pod-one http://10.0.0.10
 N=5000; hey -n $N -c $N -host fibonacci-n-pod-one.grogu.hosts.pve http://10.0.0.10
 curl -Lk -H "Host: fibonacci-n-pod-one.grogu.hosts.pve" http://10.0.0.10
 
+TARGET=six node n-pod.knative.js
+TARGET=one node n-pod.knative.js
+
 --
 -- Template
 
