@@ -9,8 +9,7 @@ const baseURL = "http://10.0.0.10";
 const run = (count) => $`hey -n ${count} -c ${count} -host ${host} ${baseURL}`;
 
 const counts = [
-  1, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600,
-  2800, 3000, 3200, 3400, 3600,
+  1, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 4000, 6000, 8000, 10000
 ];
 
 const { stdout: scriptname } = await $`basename "${process.argv[1]}" | awk -F '.js' '{print $1}'`;

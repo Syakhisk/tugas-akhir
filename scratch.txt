@@ -27,6 +27,7 @@ TARGET=four node chain.nolimit.standalone.js
 TARGET=five node chain.nolimit.standalone.js
 
 N=9000; hey -n $N -c $N -host four.standalone-lb.hosts.pve http://10.0.0.35
+N=10000; hey -n $N -c $N -host five.standalone-lb.hosts.pve http://10.0.0.35
 
 --
 -- Template
@@ -39,3 +40,4 @@ curl -Lk -H "Host: .grogu.hosts.pve" http://10.0.0.
 -- Helm
 helm upgrade --recreate-pods --wait -n monitoring -f faster-interval-kube-prometheus-stack.yaml prometheus prometheus-community/kube-prometheus-stack
 
+filebrowser -r $HOME/tugas-akhir -a 0.0.0.0
