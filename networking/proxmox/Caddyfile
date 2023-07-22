@@ -4,11 +4,9 @@ test.hosts.pve {
 	respond "Hello, world!"
 }
 
-### mock sslip
-*.tun.hosts.pve:80 {
+browse.load-tester.hosts.pve {
 	tls internal
-	# reverse_proxy {labels.3}.{labels.4}.{labels.5}.{labels.6}:{port}
-	respond "{labels.3}.{labels.4}.{labels.5}.{labels.6}:{port}"
+	reverse_proxy 10.0.0.52:8080
 }
 
 ### Serverless Nodes
@@ -55,6 +53,14 @@ ddosify.hosts.pve {
 fib-go.hosts.pve {
 	tls internal
 	reverse_proxy 10.0.0.100:8080
+}
+
+
+### mock sslip
+### not working
+*.*.*.*.*.tun.hosts.pve:80 {
+	tls internal
+	reverse_proxy {labels.4}.{labels.5}.{labels.6}.{labels.7}:{labels.3}
 }
 
 # vim: ft=conf tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab:
