@@ -10,10 +10,10 @@ const run = (count) => $`hey -n ${count} -c ${count} -host ${host} ${baseURL}`;
 
 const counts = [
   1, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600,
+  2800, 3000, 3200, 3400, 3600,
 ];
 
-const { stdout: scriptname } =
-  await $`basename "${process.argv[1]}" | awk -F '.js' '{print $1}'`;
+const { stdout: scriptname } = await $`basename "${process.argv[1]}" | awk -F '.js' '{print $1}'`;
 const { stdout: datetime } = await $`TZ='Asia/Jakarta' date +%Y-%m-%d_%H-%M-%S`;
 
 const filename = `results/${scriptname}-${target}-${counts[0]}-${

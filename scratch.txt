@@ -16,6 +16,16 @@ curl -Lk -H "Host: fibonacci-n-pod-one.grogu.hosts.pve" http://10.0.0.10
 TARGET=six node n-pod.knative.js
 TARGET=one node n-pod.knative.js
 
+
+--
+-- Standalone
+
+TARGET=one node chain.nolimit.standalone.js
+TARGET=two node chain.nolimit.standalone.js
+TARGET=three node chain.nolimit.standalone.js
+TARGET=four node chain.nolimit.standalone.js
+TARGET=five node chain.nolimit.standalone.js
+
 --
 -- Template
 
