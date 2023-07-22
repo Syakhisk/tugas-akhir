@@ -11,7 +11,7 @@ spec:
         autoscaling.knative.dev/target: "200"
 
         autoscaling.knative.dev/min-scale: "0"
-        autoscaling.knative.dev/max-scale: "6"
+        autoscaling.knative.dev/max-scale: "5"
 
         # # Make panic window x% of stable window
         # autoscaling.knative.dev/panic-window-percentage: "1.0"
