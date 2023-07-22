@@ -4,6 +4,12 @@ test.hosts.pve {
 	respond "Hello, world!"
 }
 
+### mock sslip
+*.tun.hosts.pve {
+	tls internal
+	reverse_proxy {labels.3}.{labels.4}.{labels.5}.{labels.6}:{port}
+}
+
 ### Serverless Nodes
 *.grogu.hosts.pve {
 	tls internal
