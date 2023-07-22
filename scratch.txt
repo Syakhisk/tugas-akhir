@@ -1,0 +1,21 @@
+--
+-- Behavior
+
+N=5000; hey -n $N -c $N -host fibonacci-behavior http://10.0.0.10
+curl -Lk -H "Host: fibonacci-behavior.grogu.hosts.pve" http://10.0.0.10
+
+
+--
+-- N-Pod
+
+N=5000; hey -n $N -c $N -host fibonacci-n-pod-one http://10.0.0.10
+
+N=5000; hey -n $N -c $N -host fibonacci-n-pod-one.grogu.hosts.pve http://10.0.0.10
+curl -Lk -H "Host: fibonacci-n-pod-one.grogu.hosts.pve" http://10.0.0.10
+
+--
+-- Template
+
+N=XXX; hey -n $N -c $N -host .grogu.hosts.pve http://10.0.0.
+curl -Lk -H "Host: .grogu.hosts.pve" http://10.0.0.
+
