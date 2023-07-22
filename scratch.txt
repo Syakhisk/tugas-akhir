@@ -26,6 +26,8 @@ TARGET=three node chain.nolimit.standalone.js
 TARGET=four node chain.nolimit.standalone.js
 TARGET=five node chain.nolimit.standalone.js
 
+N=3600; hey -n $N -c $N -host four.standalone-lb.hosts.pve http://10.0.0.35
+
 --
 -- Template
 
