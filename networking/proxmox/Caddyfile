@@ -5,7 +5,7 @@ test.hosts.pve {
 }
 
 ### mock sslip
-*.tun.hosts.pve {
+*.tun.hosts.pve:80 {
 	tls internal
 	# reverse_proxy {labels.3}.{labels.4}.{labels.5}.{labels.6}:{port}
 	respond "{labels.3}.{labels.4}.{labels.5}.{labels.6}:{port}"
