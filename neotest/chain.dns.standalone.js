@@ -3,10 +3,14 @@ import { $, fs } from "zx";
 if (!$.env["TARGET"]) throw new Error("TARGET env var is required");
 
 const target = $.env["TARGET"];
+const limit = $.env["LIMIT"] || 2000;
+const useLimit = $.env["USE_LIMIT"] || false;
 const host = `${target}.standalone-lb.hosts.pve`;
 const baseURL = `http://10.0.0.35`;
 
-const run = (count) => $`hey -n ${count} -c ${count} -host ${host} ${baseURL}`;
+const getCount = (c) => (useLimit ? (c < limit ? c : limit) : c);
+
+const run = (count) => $`hey -n ${count} -c ${getCount(count)} -host ${host} ${baseURL}`;
 
 const counts = [
   1, 200, 400, 600, 800, 1000, 2000, 4000, 8000, 10000
