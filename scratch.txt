@@ -41,7 +41,18 @@ N=12000; hey -n $N -c 2000 -host four.standalone-lb.hosts.pve http://10.0.0.35
 N=10000; hey -n $N -c $N https://five.standalone-lb.hosts.pve
 N=3000; hey -n $N -c $N https://five.standalone-lb.hosts.pve
 
+N=1000; hey -n $N -c 1000 https://five.standalone-lb.hosts.pve
+
 curl -Lk https://five.standalone-lb.hosts.pve
+
+TARGET=one node chain.dns.standalone.js
+TARGET=two node chain.dns.standalone.js
+TARGET=three node chain.dns.standalone.js
+TARGET=four node chain.dns.standalone.js
+TARGET=five node chain.dns.standalone.js
+
+export name="results/chain.dns.standalone-five-1-10000-2023-07-23_16-02-08"
+node get-result.js
 
 --
 -- Template
@@ -65,7 +76,5 @@ TARGET=one node chain.dns.standalone.js
 name="results/chain.dns.standalone-one-1-10000-2023-07-23_14-43-45"
 awk '/Summary:/ {getline; fastest=$2; getline; getline; average=$2; getline; getline; slowest=$2; printf "%s\t%s\t%s\n", fastest, average, slowest;}' "./$name"
 
-name="results/chain.dns.standalone-one-1-10000-2023-07-23_14-43-45"
-awk '/Summary:/ {getline; fastest=$2; getline; getline; average=$2; getline; getline; slowest=$2; next}
-     /\[200]\t[0-9]+ responses/ {count=$2; printf "%s\t%s\t%s\t%s\n", count, fastest, average, slowest;}' result
-
+export name="results/chain.dns.standalone-three-1-10000-2023-07-23_15-38-36"
+node get-result.js
