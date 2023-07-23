@@ -31,3 +31,4 @@ for (let count of counts) {
 
 console.log("Results written to:");
 console.log(filename);
+console.log(`export name="${filename}"`)

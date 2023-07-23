@@ -51,7 +51,7 @@ TARGET=three node chain.dns.standalone.js
 TARGET=four node chain.dns.standalone.js
 TARGET=five node chain.dns.standalone.js
 
-export name="results/chain.dns.standalone-five-1-10000-2023-07-23_16-02-08"
+export name="results/chain.dns.standalone-one-1-10000-2023-07-23_17-13-27"
 node get-result.js
 
 --
