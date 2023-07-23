@@ -43,6 +43,9 @@ N=3000; hey -n $N -c $N https://five.standalone-lb.hosts.pve
 
 N=1000; hey -n $N -c 1000 https://five.standalone-lb.hosts.pve
 
+N=10000; hey -n $N -c 1000 -host five.standalone-lb.hosts.pve http://10.0.0.35
+N=10000; hey -n $N -c 1000 -host four.standalone-lb.hosts.pve http://10.0.0.35
+
 curl -Lk https://five.standalone-lb.hosts.pve
 
 TARGET=one node chain.dns.standalone.js

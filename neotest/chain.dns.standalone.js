@@ -4,12 +4,12 @@ if (!$.env["TARGET"]) throw new Error("TARGET env var is required");
 
 const target = $.env["TARGET"];
 const host = `${target}.standalone-lb.hosts.pve`;
-const baseURL = `http://${host}`;
+const baseURL = `http://10.0.0.35`;
 
-const run = (count) => $`hey -n ${count} -c ${count < 1000 ? count : 1000} ${baseURL}`;
+const run = (count) => $`hey -n ${count} -c ${count < 1000 ? count : 1000} -host ${host} ${baseURL}`;
 
 const counts = [
-  1, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 4000, 6000, 8000, 10000
+  1, 200, 400, 600, 800, 1000, 2000, 4000, 8000, 10000
 ];
 
 const { stdout: scriptname } = await $`basename "${process.argv[1]}" | awk -F '.js' '{print $1}'`;
