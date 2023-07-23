@@ -17,10 +17,18 @@ curl -Lk -H "Host: fibonacci-n-pod-one.grogu.hosts.pve" http://10.0.0.10
 TARGET=six node n-pod.knative.js
 TARGET=one node n-pod.knative.js
 
-node chain.dns.con.knative.js
-node chain.dns.cpu.knative.js
+-- 
+-- Con x CPU
+
+curl -Lk -H "Host: fibonacci-n-pod-one.grogu.hosts.pve" http://10.0.0.10
+
+N=5000; hey -n $N -c $N -host fibonacci-autoscaling-con.grogu.hosts.pve http://10.0.0.10
+N=6000; hey -n $N -c 2000 -host fibonacci-autoscaling-con.grogu.hosts.pve http://10.0.0.10
 
 k delete rev fibonacci-autoscaling-cpu-00001
+
+node chain.dns.con.knative.js
+node chain.dns.cpu.knative.js
 
 
 --
@@ -43,7 +51,7 @@ N=3000; hey -n $N -c $N https://five.standalone-lb.hosts.pve
 
 N=1000; hey -n $N -c 1000 https://five.standalone-lb.hosts.pve
 
-N=10000; hey -n $N -c 1000 -host five.standalone-lb.hosts.pve http://10.0.0.35
+N=10000; hey -n $N -c $N -host five.standalone-lb.hosts.pve http://10.0.0.35
 N=10000; hey -n $N -c 1000 -host four.standalone-lb.hosts.pve http://10.0.0.35
 
 curl -Lk https://five.standalone-lb.hosts.pve
