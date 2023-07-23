@@ -1,10 +1,10 @@
 import { $, fs } from "zx";
 
 const svc = "fibonacci-autoscaling-cpu";
-const host = `${svc}.grogu.hosts.pve`;
+const host = `${svc}.grogu.hosts.pve`
 
 const target = $.env["TARGET"];
-const baseURL = `https://10.0.0.10`;
+const baseURL = `http://10.0.0.10`;
 
 const run = (count) => $`hey -n ${count} -c ${count < 1000 ? count : 1000} -host ${host} ${baseURL}`;
 
