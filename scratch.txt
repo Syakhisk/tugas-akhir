@@ -59,6 +59,13 @@ filebrowser -r $HOME/tugas-akhir -a 0.0.0.0
 socat TCP-LISTEN:42069,fork TCP:$MINIKUBE_IP:$KOURIER_IP
 curl -Lk -H 'Host: fibonacci-behavior.default.local.knative' https://10.0.0.10:42069
 
-name=""
-awk '/Summary:/ {getline; fastest=$2; getline; getline; average=$2; getline; getline; slowest=$2; printf "%s\t%s\t%s\n", fastest, average, slowest;}' "./results/$name"
+
+TARGET=one node chain.dns.standalone.js
+
+name="results/chain.dns.standalone-one-1-10000-2023-07-23_14-43-45"
+awk '/Summary:/ {getline; fastest=$2; getline; getline; average=$2; getline; getline; slowest=$2; printf "%s\t%s\t%s\n", fastest, average, slowest;}' "./$name"
+
+name="results/chain.dns.standalone-one-1-10000-2023-07-23_14-43-45"
+awk '/Summary:/ {getline; fastest=$2; getline; getline; average=$2; getline; getline; slowest=$2; next}
+     /\[200]\t[0-9]+ responses/ {count=$2; printf "%s\t%s\t%s\t%s\n", count, fastest, average, slowest;}' result
 
