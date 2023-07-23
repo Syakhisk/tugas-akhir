@@ -28,3 +28,6 @@ for (let count of counts) {
   fs.appendFileSync(filename, out.stdout);
   fs.appendFileSync(filename, "\n\n---\n\n");
 }
+
+console.log("Results written to:");
+console.log(filename);
