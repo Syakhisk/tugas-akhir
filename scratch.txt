@@ -3,6 +3,7 @@
 
 N=5000; hey -n $N -c $N -host fibonacci-behavior.grogu.hosts.pve http://10.0.0.10
 curl -Lk -H "Host: fibonacci-behavior.grogu.hosts.pve" http://10.0.0.10
+curl -Lk https://fibonacci-behavior.grogu.hosts.pve
 
 
 --
@@ -31,6 +32,11 @@ N=10000; hey -n $N -c $N -host five.standalone-lb.hosts.pve http://10.0.0.35
 
 N=10000; hey -n $N -c 2000 -host four.standalone-lb.hosts.pve http://10.0.0.35
 N=12000; hey -n $N -c 2000 -host four.standalone-lb.hosts.pve http://10.0.0.35
+
+N=10000; hey -n $N -c $N https://five.standalone-lb.hosts.pve
+N=3000; hey -n $N -c $N https://five.standalone-lb.hosts.pve
+
+curl -Lk https://five.standalone-lb.hosts.pve
 
 --
 -- Template
