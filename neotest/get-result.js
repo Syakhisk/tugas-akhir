@@ -21,5 +21,5 @@ for (let line of lines) {
   let req = line.match(/##\s+(\d+)\sReq/);
   req = req ? req[1] : 0;
 
-  console.log(`${ok}\t${req}\t${fastest}\t${average}\t${slowest}`);
+  console.log(`${req}\t${ok}\t${fastest}\t${average}\t${slowest}`);
 }
