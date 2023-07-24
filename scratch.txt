@@ -1,14 +1,15 @@
 --
 -- Behavior
-
+--
 N=5000; hey -n $N -c $N -host fibonacci-behavior.grogu.hosts.pve http://10.0.0.10
 curl -Lk -H "Host: fibonacci-behavior.grogu.hosts.pve" http://10.0.0.10
 curl -Lk https://fibonacci-behavior.grogu.hosts.pve
 
 
+
 --
 -- N-Pod
-
+--
 N=5000; hey -n $N -c $N -host fibonacci-n-pod-one http://10.0.0.10
 
 N=5000; hey -n $N -c $N -host fibonacci-n-pod-one.grogu.hosts.pve http://10.0.0.10
@@ -17,9 +18,10 @@ curl -Lk -H "Host: fibonacci-n-pod-one.grogu.hosts.pve" http://10.0.0.10
 TARGET=six node n-pod.knative.js
 TARGET=one node n-pod.knative.js
 
+
 -- 
 -- Con x CPU
-
+--
 curl -Lk -H "Host: fibonacci-n-pod-one.grogu.hosts.pve" http://10.0.0.10
 
 N=5000; hey -n $N -c $N -host fibonacci-autoscaling-con.grogu.hosts.pve http://10.0.0.10
@@ -33,6 +35,10 @@ node chain.dns.cpu.knative.js
 
 --
 -- Standalone
+--
+N=10000; hey -n $N -c 2000 -host four.standalone-lb.hosts.pve http://10.0.0.35
+N=10000; hey -n $N -c 2000 -host three.standalone-lb.hosts.pve http://10.0.0.35
+N=10000; hey -n $N -c 2000 -host five.standalone-lb.hosts.pve http://10.0.0.35
 
 TARGET=one node chain.nolimit.standalone.js
 TARGET=two node chain.nolimit.standalone.js
@@ -65,15 +71,19 @@ TARGET=five node chain.dns.standalone.js
 export name="results/chain.dns.standalone-one-1-10000-2023-07-23_17-13-27"
 node get-result.js
 
+TARGET=five USE_LIMIT=true LIMIT=2000 node chain.dns.standalone.js
+TARGET=one USE_LIMIT=true LIMIT=2000 node chain.dns.standalone.js
+
 --
 -- Template
-
+--
 N=XXX; hey -n $N -c $N -host .grogu.hosts.pve http://10.0.0.
 curl -Lk -H "Host: .grogu.hosts.pve" http://10.0.0.
 
 
 --
 -- Helm
+--
 helm upgrade --recreate-pods --wait -n monitoring -f faster-interval-kube-prometheus-stack.yaml prometheus prometheus-community/kube-prometheus-stack
 
 filebrowser -r $HOME/tugas-akhir -a 0.0.0.0
@@ -89,3 +99,18 @@ awk '/Summary:/ {getline; fastest=$2; getline; getline; average=$2; getline; get
 
 export name="results/chain.dns.standalone-three-1-10000-2023-07-23_15-38-36"
 node get-result.js
+
+kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.10.1/serving-hpa.yaml
+
+-- 
+-- DEMO
+-- 
+
+node chain.dns.con.knative.js
+node chain.dns.cpu.knative.js
+
+TARGET=one node chain.nolimit.standalone.js
+TARGET=two node chain.nolimit.standalone.js
+TARGET=three node chain.nolimit.standalone.js
+TARGET=four node chain.nolimit.standalone.js
+TARGET=five node chain.nolimit.standalone.js

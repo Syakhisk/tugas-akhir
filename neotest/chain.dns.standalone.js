@@ -9,7 +9,6 @@ const host = `${target}.standalone-lb.hosts.pve`;
 const baseURL = `http://10.0.0.35`;
 
 const getCount = (c) => (useLimit ? (c < limit ? c : limit) : c);
-
 const run = (count) => $`hey -n ${count} -c ${getCount(count)} -host ${host} ${baseURL}`;
 
 const counts = [

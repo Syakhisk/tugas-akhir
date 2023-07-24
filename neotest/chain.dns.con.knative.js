@@ -4,9 +4,12 @@ const svc = "fibonacci-autoscaling-con";
 const host = `${svc}.grogu.hosts.pve`
 
 const target = $.env["TARGET"];
+const limit = $.env["LIMIT"] || 2000;
+const useLimit = $.env["USE_LIMIT"] || false;
 const baseURL = `http://10.0.0.10`;
 
-const run = (count) => $`hey -n ${count} -c ${count < 2000 ? count : 2000} -host ${host} ${baseURL}`;
+const getCount = (c) => (useLimit ? (c < limit ? c : limit) : c);
+const run = (count) => $`hey -n ${count} -c ${getCount(count)} -host ${host} ${baseURL}`;
 
 const counts = [
   1, 200, 400, 600, 800, 1000, 2000, 4000, 8000, 10000
